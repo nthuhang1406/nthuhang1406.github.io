@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex02</title>
+</head>
+<body>
+    <input type="text" id="txta">
+    <input type="text" id="txtb">
+    <button onclick="tongab();">
+        Tinhtong
+    </button>
+</body>
+<script>
+    function tongab(){
+        var txta = document.getElementById('txta').value;
+        var txtb = document.getElementById('txtb').value;
+        if (txta == null || txta == " || isNaN(txta)") {
+            alert("Vui long nhap so hop le ");
+            return;
+        }
+        alert(parseInt(txta)  +  parseInt(txtb));
+    }
+</script>
+</html>
