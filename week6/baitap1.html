@@ -13,14 +13,15 @@
     </button>
 </body>
 <script>
-    function tongab(){
+    function tongab() {
         var txta = document.getElementById('txta').value;
         var txtb = document.getElementById('txtb').value;
-        if (txta == null || txta == " || isNaN(txta)") {
-            alert("Vui long nhap so hop le ");
+        if ( txta == null || txta == '' || isNaN(txta) ) {
+            alert('Vui long nhap so a hop le')
             return;
         }
-        alert(parseInt(txta)  +  parseInt(txtb));
+        alert(parseInt(txta)  +  parseInt(txtb)) 
     }
+
 </script>
 </html>
